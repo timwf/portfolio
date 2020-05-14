@@ -1,48 +1,24 @@
 import React, {useState} from 'react'
-import eye from '../images/i-tim.png'
 import AnimatedHeroContent from './AnimatedHeroContent';
-import { useTransition, animated } from 'react-spring'
-
-
-
-
+import {Transition} from 'react-spring/renderprops'
 
 
 const Home = (props) => {
-
-    console.log(props);
-    
-    const [show, set] = useState(false)
-const transitions = useTransition(show, null, {
-from: { marginTop: '-700px' },
-enter: { marginTop: "0px" },
-leave: { marginTop: '-700px' },
-})
-
-
-
+  const items = true;
     return (
         <>
           <div className="hero-container">
-
-                <AnimatedHeroContent />
-
-                {
-          transitions.map(({item: location, props, key}) => (
-            <animated.div style={props} key={key} className="hero-image-container">
-
-            </animated.div>
-          ))
-        }  
-
-
-            
-
-                <div className="social-icons-container">
-
-                </div>
-            </div>
-
+            <AnimatedHeroContent />
+            <Transition
+                items={items} keys={item => item.key}
+                from={{ transform: 'translate3d(0,-500px,5000px  )' }}
+                enter={{ transform: 'translate3d(0,0px,0)' }}
+                leave={{ transform: 'translate3d(0,-40px,0)' }}>
+                {item => props => <div style={props} className="hero-image-container">{item.text}</div>}
+          </Transition>
+          <div className="social-icons-container">
+          </div>
+        </div>
         </>
     )
 }

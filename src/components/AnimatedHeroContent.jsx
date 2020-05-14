@@ -1,4 +1,5 @@
 import React from 'react'
+import {Spring} from 'react-spring/renderprops'
 
 export default function AnimatedHeroContent() {
     return (
@@ -20,10 +21,20 @@ export default function AnimatedHeroContent() {
                      <h1 className="header-williams">Williams-</h1>
                 </div>
                 <div className="fowler-container">
-                <h1 className="header-fowler">Fow <span className="space-fowler"></span>ler</h1>
+                <h1 className="header-fowler">Fow <span className="space-fowler"></span>ler.</h1>
+                
                 </div>
+                
             </div>
-
+            <Spring
+                from={{opacity: '0'}}
+                to={{opacity: '1'}}
+                delay='1000'            >
+                {props => (
+                        <h3 style={props} className="hero-sub">MERN Stack Web Developer</h3>
+                )}
+            </Spring>
+            
         </div>
     )
 }

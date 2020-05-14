@@ -10,12 +10,14 @@ body{
   background-color: #1E1E1E;
   width: 100%;
   top: 0;
-  position: absolute;
+  padding-left: 64px;
+  min-height: 100vh;
   background-position: center;
   height: 100%;
   background-repeat: no-repeat;
   background-image: url(data:image/png;base64,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);
   background-attachment: fixed;
+  background-position: calc(50% - -36px) calc(100% - 50%);
 }
 
 *{
@@ -122,6 +124,12 @@ svg{
 
 //animated hero content
 
+.hero-sub{
+  color: white;
+  margin-top: 419px;
+  margin-left: 122px;
+}
+
 .animated-header-hero{
   position: relative;
   margin-left: 0px;
@@ -131,7 +139,7 @@ svg{
     width: 557px;
     overflow: hidden;
     position: absolute;
-    top: 84px;
+    top: 123px;
   }
   .header-timothy{
     position: absolute;
@@ -155,11 +163,12 @@ svg{
     animation-duration: 1.5s;
   }
   .williams-container{
+    z-index: 1;
     height: 115px;
     width: 868px;
     overflow: hidden;
     position: absolute;
-    top: 193px;
+    top: 231px;
   }
   .header-williams{
     position: absolute;
@@ -175,7 +184,7 @@ svg{
     width: 868px;
     overflow: hidden;
     position: absolute;
-    top: 284px;
+    top: 325px;
   }
   .header-fowler{
     position: absolute;
@@ -229,6 +238,41 @@ svg{
   left: 0;
   right: 0;
 overflow: hidden;
+}
+
+// skills
+
+.skills-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+  min-height: 100vh;
+}
+
+.skills-container{
+  display: inline-flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.skills-section{
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.skills-row{
+  display: flex;
+}
+
+.skills-donut{
+  width: 90px;
+  p{
+    font-size: 13px;
+  }
 }
 
 
