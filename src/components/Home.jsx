@@ -23,9 +23,7 @@ leave: { marginTop: '-700px' },
 
     return (
         <>
-        <div className="page">
-
-            <div className="hero-container">
+          <div className="hero-container">
 
                 <AnimatedHeroContent />
 
@@ -44,7 +42,7 @@ leave: { marginTop: '-700px' },
 
                 </div>
             </div>
-        </div>
+
         </>
     )
 }

@@ -14,10 +14,13 @@ function App() {
    const location = useLocation();  
 
   const transitions = useTransition(location, location => location.pathname, {
-    from: {opacity: 0},
-    enter: {opacity: 1}, 
-    leave: {opacity: 0, marginLeft: "-500px"} 
-  }  )
+    from: {opacity: 0  },
+    enter: {opacity: 1,  marginTop: "0px"},
+    leave: { marginright: "900px" },
+   }  )
+
+  console.log(transitions);
+  
   
   return (
  
