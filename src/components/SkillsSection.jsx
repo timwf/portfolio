@@ -6,18 +6,23 @@ function SkillsSection(props) {
     
     return (
         <div className="skills-section">
-            <h4>{props.title}</h4>
+            <h3>{props.title}</h3>
             {props.title == "Languages" ? 
             <>
             <div className="skills-row">
-                <SkillsDonut title="Javascript" value="10" />
-                <SkillsDonut title="CSS/SCSS" value="110" />
-                <SkillsDonut title="Jquery" value="120" />
+                <SkillsDonut title="JS ES6" value="122" />
+                <SkillsDonut title="React.js" value="120" />
+                <SkillsDonut title="Redux" value="116" />
             </div>
             <div className="skills-row">
-                <SkillsDonut title="Javascript" value="130" />
-                <SkillsDonut title="CSS/SCSS" value="140" />
-                <SkillsDonut title="Jquery" value="150" />
+                <SkillsDonut title="Socket.IO" value="111" />
+                <SkillsDonut title="jQuery" value="105" />
+                <SkillsDonut title="Thunk" value="95" />
+            </div>
+            <div className="skills-row">
+                <SkillsDonut title="Node.js" value="93" />
+                <SkillsDonut title="MongoDB" value="89" />
+                <SkillsDonut title="Mongoose" value="72" />
             </div>
 
             </>
@@ -25,14 +30,19 @@ function SkillsSection(props) {
             {props.title == "UX/UI" ? 
             <>
             <div className="skills-row">
-                <SkillsDonut title="Javascript" value="160" />
-                <SkillsDonut title="CSS/SCSS" value="170" />
-                <SkillsDonut title="Jquery" value="180" />
+                <SkillsDonut title="CSS3" value="126" />
+                <SkillsDonut title="Bootstrap-react" value="122" />
+                <SkillsDonut title="SVG Animation" value="121" />
             </div>
             <div className="skills-row">
-                <SkillsDonut title="Javascript" value="190" />
-                <SkillsDonut title="CSS/SCSS" value="101" />
-                <SkillsDonut title="Jquery" value="102" />
+                <SkillsDonut title="Figma" value="120" />
+                <SkillsDonut title="Inkscape" value="118" />
+                <SkillsDonut title="Sass" value="108" />
+            </div>
+            <div className="skills-row">
+                <SkillsDonut title="Styled Components" value="105" />
+                <SkillsDonut title="Material UI" value="92" />
+                <SkillsDonut title="Gimp" value="83" />
             </div>
 
             </>
@@ -40,14 +50,19 @@ function SkillsSection(props) {
                         {props.title == "CMS/Misc" ? 
             <>
             <div className="skills-row">
-                <SkillsDonut title="Javascript" value="103" />
-                <SkillsDonut title="CSS/SCSS" value="104" />
-                <SkillsDonut title="Jquery" value="105" />
+                <SkillsDonut title="Shopify" value={118} />
+                <SkillsDonut title="Liquid" value="108" />
+                <SkillsDonut title="Mailchimp" value="102" />
             </div>
             <div className="skills-row">
-                <SkillsDonut title="Javascript" value="106" />
-                <SkillsDonut title="CSS/SCSS" value="107" />
-                <SkillsDonut title="Jquery" value="108" />
+                <SkillsDonut title="Axios" value="98" />
+                <SkillsDonut title="Git" value="95" />
+                <SkillsDonut title="Wordpress" value="89" />
+            </div>
+            <div className="skills-row">
+                <SkillsDonut title="Nivo" value="88" />
+                <SkillsDonut title="Theme Kit" value="85" />
+                <SkillsDonut title="P5" value="82" />
             </div>
 
             </>

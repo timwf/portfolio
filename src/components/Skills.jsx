@@ -8,7 +8,9 @@ export default function Skills() {
 
     return (
         <div className="skills-wrapper">
+            
         <div className="skills-container">
+        
             <div className="languages-skills">
                 <SkillsSection title={"Languages"} />
             </div>
