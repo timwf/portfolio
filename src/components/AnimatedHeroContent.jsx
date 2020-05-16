@@ -31,8 +31,24 @@ export default function AnimatedHeroContent() {
                 to={{opacity: '1'}}
                 delay='1000'            >
                 {props => (
-                        <h3 style={props} className="hero-sub">MERN Stack Web Developer</h3>
-                )}
+                <>
+                <h3 style={props} className="hero-sub">MERN Stack Web Developer</h3>
+                </>
+                )}                
+            </Spring>
+            <Spring
+                from={{opacity: '0'}}
+                to={{opacity: '1'}}
+                delay='1200'            >
+                {props => (
+                <>
+                <p style={props}className="tim-blurb">Hi, I'm Tim - a Bangkok based dedicated self taught developer. 
+                Primarly working with React.js creating beutiful web expieriences for clients around the world.  Strong UI/UX 
+                skills along with first class front and back end development.
+                
+                </p>
+                </>
+                )}                
             </Spring>
             
         </div>

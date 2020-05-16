@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import './App.scss';
 import SideBar from './components/SideBar';
 import { BrowserRouter as Router, Switch, Route, Link, useLocation} from "react-router-dom";
@@ -7,12 +7,19 @@ import Skills from './components/Skills';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import { animated, useTransition } from 'react-spring'
+import { ThemeContext, ThemeProvider } from './components/LightThemeContect'
+
 
 
 function App() {
 
-   const location = useLocation();  
+  const [light, setLight] = useState(false);
 
+  function toggleLight(){
+    setLight(!light)
+  }
+
+  const location = useLocation(); 
   const transitions = useTransition(location, location => location.pathname, {
     from: {opacity: 0  },
     enter: {opacity: 1,  marginTop: "0px"},
@@ -23,11 +30,10 @@ function App() {
   
   
   return (
- 
+    <ThemeProvider>
+
     <div className="app-container">
-
-      <SideBar />
-
+      <SideBar toggleTheme={toggleLight}/>
       <div className="App">
 
         {
@@ -44,7 +50,7 @@ function App() {
         }   
       </div>
     </div>
-
+    </ThemeProvider>
 
 
   );
