@@ -2,21 +2,17 @@ import React, {useState, useContext} from 'react'
 import AnimatedHeroContent from './AnimatedHeroContent';
 import {Transition} from 'react-spring/renderprops'
 import { ThemeContext } from './LightThemeContect'
-import styled from 'styled-components'
+
 
 
 const Home = (props) => {
   const [light, setLight] = useContext(ThemeContext);
-const ThemeDiv = styled.div`    
-        *{
-            color: ${light ? "black" : "white"};
-        }
-    `;
+
   const items = true;
 
     return (
         <>
-          <ThemeDiv className="hero-container">
+          <div className="hero-container">
             <AnimatedHeroContent />
             
             <Transition
@@ -27,12 +23,12 @@ const ThemeDiv = styled.div`
                 {item => props => <div style={props} className="hero-image-container">{item.text}</div>}
           </Transition>
           <div className="social-icons-container">
-            <a href="https://github.com/timwf"><img src="./images/github-white.png" alt=""/></a>
-            <img src="./images/linkedin-white.png" alt=""/>
-            <img src="./images/codepen-white.png" alt=""/>
-            <img src="./images/twitter-white.png" alt=""/>
+            <img src={`${light ? "./images/github-black.png" : "./images/github-white.png"}`} alt=""/>
+            <img src={`${light ? "./images/linkedin-black.png" : "./images/linkedin-white.png"}`} alt=""/>
+            <img src={`${light ? "./images/codepen-black.png" : "./images/codepen-white.png"}`} alt=""/>
+            <img src={`${light ? "./images/twitter-black.png" : "./images/twitter-white.png"}`} alt=""/>
           </div>
-        </ThemeDiv>
+        </div>
         </>
     )
 }

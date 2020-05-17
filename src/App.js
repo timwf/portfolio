@@ -15,10 +15,8 @@ function App() {
 
   const [light, setLight] = useState(false);
 
-  function toggleLight(){
-    setLight(!light)
-  }
-
+  
+  
   const location = useLocation(); 
   const transitions = useTransition(location, location => location.pathname, {
     from: {opacity: 0  },
@@ -26,19 +24,18 @@ function App() {
     leave: { marginright: "900px" },
    }  )
 
-  console.log(transitions);
+  
   
   
   return (
     <ThemeProvider>
-
     <div className="app-container">
-      <SideBar toggleTheme={toggleLight}/>
-      <div className="App">
+      <SideBar toggleTheme={setLight} />
+      <div className={`${light ? "App App-light" : "App"}`} >
 
         {
           transitions.map(({item: location, props, key}) => (
-            <animated.div style={props} key={key} special={props}>
+            <animated.div style={props} key={key} >
                              <Switch location={location}>
                     <Route path="/" exact component={Home}/>
                     <Route path="/work" component={Work}/>

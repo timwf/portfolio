@@ -38,6 +38,9 @@ h1{
   top: 0;
 }
 
+
+
+
 .settings-icon{
   position: absolute;
   bottom: 20px;
@@ -353,6 +356,12 @@ overflow: hidden;
       border-radius: 5px;
       font-size: 12px;
     }
+    .design-badge{
+      background-color: #226622;
+    }
+    .misc-badge{
+      background-color: black;
+    }
   }
   .works-card-links{
     position: absolute;
@@ -367,7 +376,6 @@ overflow: hidden;
     }
 
   }
-
 }
 
 .popover{
@@ -376,7 +384,81 @@ overflow: hidden;
   padding: 20px;
   border-radius: 5px;
   z-index: 99;
-  width: 300px;
+  width: 400px;
+  max-width: 80vw;
+  margin: auto;
+  h3{
+    border-top: solid white;
+    border-width: 1px;
+    padding-top: 10px;
+  }
+  p{
+    font-size: 14px;
+  }
+  
+}
+
+.tooltip{
+  z-index: 999 !important;
 }
 
 
+
+.sidebar-container-light{
+  background-color: #cecece47;
+  .menu-icon-cont{
+    border-left: solid #cecece;
+    border-width: 2px;
+  }
+  .active div {
+    border-left: solid black;
+    border-width: 2px;
+  }
+  .active path {
+    fill: black;
+  }
+  .active p {
+    color: black;
+  }
+  path{
+    fill: #766c6c;
+  }
+}
+
+
+.App-light{
+  background-color: #cecece4f;
+  background-image: url('/images/twf-white.png');
+  .hero-image-container {
+    background-image: url('/images/tim-bg-darker.png');
+  }
+  h1{
+    color: black
+  }
+  rect{
+    fill: black
+  }
+  ellipse{
+    fill: black
+  }
+  .hero-sub{
+    color: black;
+  }
+  .tim-blurb{
+    color: black;
+    border-top: solid black;
+    border-width: 1px;
+  }
+  .Works-card-cont {
+    p{
+      color: white;
+    }
+  }
+  .Works-card-cont {
+    color: black;
+    background-color: #ffffff;
+}
+.skills-section {
+  color: black;
+}
+}

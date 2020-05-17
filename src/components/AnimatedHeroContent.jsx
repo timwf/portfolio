@@ -29,7 +29,7 @@ export default function AnimatedHeroContent() {
             <Spring
                 from={{opacity: '0'}}
                 to={{opacity: '1'}}
-                delay='1000'            >
+                delay='1100'            >
                 {props => (
                 <>
                 <h3 style={props} className="hero-sub">MERN Stack Web Developer</h3>
@@ -39,7 +39,7 @@ export default function AnimatedHeroContent() {
             <Spring
                 from={{opacity: '0'}}
                 to={{opacity: '1'}}
-                delay='1200'            >
+                delay='1500'            >
                 {props => (
                 <>
                 <p style={props}className="tim-blurb">Hi, I'm Tim - a Bangkok based dedicated self taught developer. 

@@ -2,25 +2,22 @@ import React, {useState, useContext} from 'react'
 import MenuItem from './MenuItem'
 import { Link, NavLink } from 'react-router-dom'
 import { ThemeContext } from './LightThemeContect'
-import styled from 'styled-components'
+
 
 
 export default function SideBar(props) {
     const [light, setLight] = useContext(ThemeContext);
+    console.log(props);
+    
 
-    const ThemeDiv = styled.div`
-        background-color: ${light ? "#dbd4d4" : "#333333"};
-            p{
-                color: ${light ? "black" : "#767676"};
-            }
-        `;
-        
+    const toggleTheme = () => {
+        setLight(!light)
+        props.toggleTheme(!light)
 
-  
- 
+    }
 
-    return (
-        <ThemeDiv className="sidebar-container">
+   return (
+        <div className={`${light ? "sidebar-container sidebar-container-light" : "sidebar-container"}`}>
             <NavLink to="/" exact activeClassName="active">
                  <MenuItem icon="home"/>                 
             </NavLink>
@@ -33,16 +30,9 @@ export default function SideBar(props) {
             <NavLink to="/contact">
                 <MenuItem icon="contact" />
             </NavLink>
-            <div className="settings-icon" onClick={() => setLight(!light)}>
+            <div className="settings-icon" onClick={() => toggleTheme()}>
             <MenuItem icon="settings"  />              
-            </div>
-
-
-            
-        </ThemeDiv>
-
-
-    
-
+            </div>           
+        </div>
     )
 }
