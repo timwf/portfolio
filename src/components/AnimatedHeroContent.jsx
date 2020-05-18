@@ -32,7 +32,7 @@ export default function AnimatedHeroContent() {
                 delay='1100'            >
                 {props => (
                 <>
-                <h3 style={props} className="hero-sub">MERN Stack Web Developer</h3>
+                <h3 style={props} className="hero-sub">MERN Stack | Shopify Web Developer</h3>
                 </>
                 )}                
             </Spring>
@@ -42,8 +42,8 @@ export default function AnimatedHeroContent() {
                 delay='1500'            >
                 {props => (
                 <>
-                <p style={props}className="tim-blurb">Hi, I'm Tim - a Bangkok based dedicated self taught developer. 
-                Primarly working with React.js creating beutiful web expieriences for clients around the world.  Strong UI/UX 
+                <p style={props}className="tim-blurb">Hi, I'm Tim - a Bangkok based Shopify | MERN stack developer. 
+                Primarly working with React.js and Shopify creating beutiful web expieriences for clients around the world.  Strong UI/UX 
                 skills along with first class front and back end development.
                 
                 </p>

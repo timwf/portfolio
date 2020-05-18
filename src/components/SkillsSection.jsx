@@ -10,8 +10,8 @@ function SkillsSection(props) {
             {props.title == "Languages" ? 
             <>
             <div className="skills-row">
-                <SkillsDonut title="JS ES6" value="122" />
-                <SkillsDonut title="React.js" value="120" />
+                <SkillsDonut title="JS ES6" value="135" />
+                <SkillsDonut title="React.js" value="135" />
                 <SkillsDonut title="Redux" value="116" />
             </div>
             <div className="skills-row">
@@ -30,12 +30,12 @@ function SkillsSection(props) {
             {props.title == "UX/UI" ? 
             <>
             <div className="skills-row">
-                <SkillsDonut title="CSS3" value="126" />
-                <SkillsDonut title="Bootstrap-react" value="122" />
-                <SkillsDonut title="SVG Animation" value="121" />
+                <SkillsDonut title="CSS3" value="135" />
+                <SkillsDonut title="Bootstrap-react" value="135" />
+                <SkillsDonut title="SVG Animation" value="135" />
             </div>
             <div className="skills-row">
-                <SkillsDonut title="Figma" value="120" />
+                <SkillsDonut title="Figma" value="135" />
                 <SkillsDonut title="Inkscape" value="118" />
                 <SkillsDonut title="Sass" value="108" />
             </div>
@@ -50,12 +50,12 @@ function SkillsSection(props) {
                         {props.title == "CMS/Misc" ? 
             <>
             <div className="skills-row">
-                <SkillsDonut title="Shopify" value={118} />
-                <SkillsDonut title="Liquid" value="108" />
-                <SkillsDonut title="Mailchimp" value="102" />
+                <SkillsDonut title="Shopify" value="135" />
+                <SkillsDonut title="Liquid" value="135" />
+                <SkillsDonut title="Mailchimp" value="122" />
             </div>
             <div className="skills-row">
-                <SkillsDonut title="Axios" value="98" />
+                <SkillsDonut title="Axios" value="101" />
                 <SkillsDonut title="Git" value="95" />
                 <SkillsDonut title="Wordpress" value="89" />
             </div>

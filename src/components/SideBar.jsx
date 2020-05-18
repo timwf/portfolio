@@ -31,7 +31,7 @@ export default function SideBar(props) {
                 <MenuItem icon="contact" />
             </NavLink>
             <div className="settings-icon" onClick={() => toggleTheme()}>
-            <MenuItem icon="settings"  />              
+            
             </div>           
         </div>
     )

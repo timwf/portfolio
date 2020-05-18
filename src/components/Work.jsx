@@ -3,18 +3,6 @@ import { useTransition, animated } from 'react-spring'
 import WorksCard from './WorksCard'
 
 const data = [{
-    title: "Furbabies", 
-    description: "A static website built for a clients dog walking business.",
-    features: "· PHP Contact form  \n · Custom collapsable Navigation \n · Custom design and css \n · Intergrated messenger widget",
-    details: `Kate has a dog walking business that she wanted to promote.  \n Using figma for the wire frame and prototype, and standard html, SASS and Javascript static build. \n The design and navigation is hand built and responsive to all device widths.`,
-    badges: ["javascript", "jQuery", "html", "SASS", "PHP"],
-    designBadges: ["SVG","figma", "inkscape", "logo design", "gimp"],
-    miscBadges: [],
-    image: "./gif/furbabies-16-9.gif",
-    gitLink: "https://github.com/timwf/Furbabies-final",
-    webLink: "https://timwf.github.io/Furbabies-final/index.html"
-},
-{
     title: "Sam Smith Brewey", 
     description: "Bespoke built Shopify landing page with customizable elements.",
     features: "· Custom design and css \n· Animated bottles on scroll  \n · Customisable images and descriptions allowing client to amend in shopify backend \n · Custom parralex effect \n · SVG Logo design \n · Bespoke design navigation",
@@ -28,15 +16,27 @@ const data = [{
 },
 {
     title: "Nordic Furniture Design", 
-    description: "Bespoke Product Page design and Mega Menu.",
-    features: "· Custom built Mega Menu \n· Custom built product pages  \n · SVG Logo design ",
-    details: "A bespoke landing page including animated bottles with intergrated Owl Carousel product slider - Ongoing project",
+    description: "Bespoke Shopify Product Page design and Mega Menu.",
+    features: "· Custom built responsive Mega Menu \n· Custom built responsive collection pages  \n · SVG Logo design  \n · Mobile Responsive",
+    details: "Custom built mobile responsive collection pages with bespoke 'Mega Menu'",
     badges: ["javascript", "jQuery", ],
     designBadges: ["figma", "inkscape", "logo design", "gimp"],
     miscBadges: ["Shopify", "Liquid"],
     image: "./gif/nordic-16-9.gif",
     gitLink: "https://nordic-furniture-design.myshopify.com/collections/furniture",
     webLink: "https://nordic-furniture-design.myshopify.com/collections/furniture"
+},
+{
+    title: "Furbabies", 
+    description: "A static website built for a clients dog walking business.",
+    features: "· PHP Contact form  \n · Custom collapsable Navigation \n · Custom design and css \n · Intergrated messenger widget",
+    details: `Kate has a dog walking business that she wanted to promote.  \n Using figma for the wire frame and prototype, and standard html, SASS and Javascript static build. \n The design and navigation is hand built and responsive to all device widths.`,
+    badges: ["javascript", "jQuery", "html", "SASS", "PHP"],
+    designBadges: ["SVG","figma", "inkscape", "logo design", "gimp"],
+    miscBadges: [],
+    image: "./gif/furbabies-16-9.gif",
+    gitLink: "https://github.com/timwf/Furbabies-final",
+    webLink: "https://timwf.github.io/Furbabies-final/index.html"
 },
     {
     title: "Retro Brain Map", 
